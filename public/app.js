@@ -1,7 +1,7 @@
 // Grab the articles as a json
 $.getJSON("/articles", function(data) {
     for (var i = 0; i < data.length; i++) {
-      $("#articles").append("<p id='headder' data-id='" + data[i]._id + "'>" + "<h3>" + data[i].title + "</h3>" + "</p>");
+      $("#articles").append("<p id='headline' data-id='" + data[i]._id + "'>" + data[i].title + "</h3>" + "</p>");
       $("#articles").append("<div id='desc' data-id='" + data[i]._id + "'>" + data[i].desc + "</div>");
       $("#articles").append("<a id='link' data-id='" + data[i]._id + "'" + "href='" + data[i].link + "'>" + data[i].link + "</a>");
     }

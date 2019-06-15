@@ -3,6 +3,12 @@ body {
 }
 #title{
     font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    align-items: center
+}
+#headline{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration-style: dashed
 }
 #logo{
     max-width: 300px;
@@ -19,7 +25,7 @@ body {
 #articles {
   display: inline-block;
   overflow: auto;
-  width: 60%;
+  width: 70%;
   height: 700px;
 }
 #notes {
