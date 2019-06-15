@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>NEWScrape</title>
-    <link rel="stylesheet" typle="text/css" href="assets/styles/style.css">    
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <div>
-      <img src="assets/images/NewYorker-logo.png"/>
-      <!-- <h1 id="title">The New Yorker Article Scraper</h1> -->
-      </div>
-      <div id="wrapper">
-      <h2 id="title">Todays Headlines:</h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>NEWScrape</title>
+  <link rel="stylesheet" typle="text/css" href="assets/styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <img src="assets/images/NewYorker-logo.png" />
+    <!-- <h1 id="title">The New Yorker Article Scraper</h1> -->
+  </div>
+  <div class="row" id="wrapper">
+    <div class="col-2"></div>
+    <div class="col-4" id="title"><h2>Todays Headlines:</h2></div>
+    <button type="button" class="btn btn-light col-2" id="refresh">Refresh</button>
+    <div class="col-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-6" id="articles"></div>
+    <div class="col-4" id="notes"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

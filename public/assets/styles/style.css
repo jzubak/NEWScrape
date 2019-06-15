@@ -10,18 +10,23 @@ body {
     font-weight: bolder;
     font-size: 18pt
 }
+#refresh{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 16pt
+}
 img{
     margin-left: 33.333%;
     margin-right: 33.333%;
     max-width: 300px;
     max-height: 300px;
 }
-#wrapper {
+/* #wrapper {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5%;
-}
+  padding-top: 5%; */
+/* } */
 #articles {
   display: inline-block;
   overflow: auto;
