@@ -4,7 +4,7 @@ var mongojs = require("mongojs");
 var express = require("express");
 var mongoose = require("mongoose");
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/NEWScrape";
     mongoose.connect(MONGODB_URI);
 
 var db = require("./models");
