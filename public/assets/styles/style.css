@@ -1,0 +1,41 @@
+body { 
+    background-color: rgb(230, 234, 236) 
+}
+#title{
+    font-family: 'Courier New', Courier, monospace;
+}
+#logo{
+    max-width: 300px;
+    max-height: 300px;
+    padding:0;
+    margin: 0
+}
+#wrapper {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+#articles {
+  display: inline-block;
+  overflow: auto;
+  width: 60%;
+  height: 700px;
+}
+#notes {
+  float: right;
+  width: 30%;
+}
+textarea, input {
+  display: block;
+  width: 100%;
+  background-color: rgb(237, 242, 245);
+}
+input {
+  height: 36px;
+  font-size: 24px;
+}
+textarea {
+  height: 200px;
+  font-size: 18px;
+}

@@ -20,21 +20,20 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 mongoose.connect("mongodb://localhost/NEWScrape", { useNewUrlParser: true });
 
+const BASE_URL = "https://www.newyorker.com"
 // Routes
 app.get("/scrape", function(req, res) {
-  axios.get("https://www.newyorker.com/popular").then(function(response) {
+  axios.get(`${BASE_URL}/popular`).then(function(response) {
     var $ = cheerio.load(response.data);
     console.log("data" + $);
     $("div.Card__mostPopularRiver___2N9m5 > div").each(function(i, element) {
       var result = {};
-
       result.title = $(this)
         .find("h3")
         .text();
       result.desc = $(this)
         .find("p")
-        .text();
-      result.link = $(this)
+      result.link = BASE_URL + $(this)
       .find("h3")
       .parent()
       .attr("href");
@@ -42,11 +41,9 @@ app.get("/scrape", function(req, res) {
 
       db.Article.create(result)
         .then(function(dbArticle) {
-
           console.log(dbArticle);
         })
         .catch(function(err) {
-
           console.log(err);
         });
     });
