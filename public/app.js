@@ -58,4 +58,13 @@ $.getJSON("/articles", function(data) {
           window.location.reload()
       })
   })
+  $("#comments").on("click", function(){
+    $.ajax({
+      method: "GET",
+      url: "/notes/"
+    })
+    .then(function(){
+        window.location.reload()
+    })
+})
   

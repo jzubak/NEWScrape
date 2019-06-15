@@ -82,6 +82,15 @@ app.post("/articles/:id", function(req, res) {
   db.Article.create()
 });
 
+app.get("/notes/", function(req, res){
+    db.Note.find({})
+    .then(function(showNotes){
+        res.json(showNotes)
+    })
+    .catch(function(err){
+        res.json(err)
+    })
+});
 // Start the server
 app.listen(PORT, function() {
   console.log("App running on port " + PORT + "!");
