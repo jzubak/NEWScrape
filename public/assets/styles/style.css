@@ -4,17 +4,19 @@ body {
 #title{
     font-family: 'Courier New', Courier, monospace;
     text-decoration: underline;
-    align-items: center
+    /* margin-left: 10%; */
+    /* margin-right: 30%; */
 }
 #headline{
     font-family: 'Courier New', Courier, monospace;
-    text-decoration-style: dashed
+    font-weight: bolder;
+    font-size: 18pt
 }
-#logo{
+img{
+    margin-left: 30%;
+    margin-right: 30%;
     max-width: 300px;
     max-height: 300px;
-    padding:0;
-    margin: 0
 }
 #wrapper {
   width: 960px;
