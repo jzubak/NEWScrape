@@ -49,7 +49,7 @@ $.getJSON("/articles", function(data) {
     $("#bodyinput").val("");
   });
 
-  $("button").on("click", "#refresh", function(){
+  $("#refresh").on("click", function(){
       $.ajax({
         method: "GET",
         url: "/scrape/"
